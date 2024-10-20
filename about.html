@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Health Hub and how we empower individuals to lead healthier lives through physical, mental, and emotional wellness.">
+    <meta name="keywords" content="about us, health, wellness, physical health, mental health, emotional health, health hub">
+    <meta property="og:title" content="About Us | Health Hub">
+    <meta property="og:description" content="Health Hub is dedicated to providing comprehensive resources for improving physical, mental, and emotional health.">
+    <meta property="og:image" content="https://static.toiimg.com/photo/97420059.cms">
+    <title>About Us - Health Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #0056b3;
+            color: #FFD700;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007BFF;
+            margin: 40px 0;
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        h2 {
+            text-align: center;
+            color: #007BFF;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+/* Box Styling for About Us Content */
+.about-us-content {
+    padding: 40px;
+    background-color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: left;
+    border: 2px solid #007BFF; /* Adding a border to create the box */
+}
+
+/* Box Styling for Meet Our Team */
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.team-member {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    border: 2px solid #007BFF; /* Adding a border to create the box for each member */
+}
+
+/* Adding padding inside the box for better readability */
+.about-us-content p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* Meet Our Team Section Text Box */
+.team-member h3, .team-member p {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9; /* Light background for team member text box */
+    border-radius: 5px;
+    border: 1px solid #ddd; /* Border for individual team member box */
+}
+
+.bio {
+    color: #777;
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+/* About Us Section Styling */
+#about {
+    background: #f1f8ff;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 40px;
+    position: relative;
+}
+
+.about-us-hero {
+    background: #9fabb7;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+}
+
+.about-us-hero h2 {
+    font-size: 2.5em; /* Adjusted size */
+    margin-bottom: 10px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.about-us-hero p {
+    font-size: 1.2em; /* Reduced text size */
+    margin-top: 0;
+    opacity: 0.9;
+}
+
+.about-us-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.about-us-content p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.about-us-content ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.about-us-content ul li {
+    padding: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-us-hero h2 {
+        font-size: 2em;
+    }
+
+    .about-us-content p {
+        font-size: 1em;
+    }
+}
+
+
+
+/* Team Member Grid */
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.team-member {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2); /* Hover effect with stronger shadow */
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 5px solid #8d97a1;
+    transition: transform 0.3s ease;
+}
+
+.team-member img:hover {
+    transform: scale(1.1); /* Image hover effect */
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    color: #007BFF;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    margin: 5px 0;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.bio {
+    color: #777;
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+        /* Footer */
+        footer {
+            background: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        header {
+    background: #007BFF;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    width: 130px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px; /* Space between logo and heading */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+    color: #FFD700;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Navigation Bar -->
+    <header>
+        <h1>Health Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="about-us-hero">
+            <h2>Welcome to Health Hub</h2>
+            <p>Your one-stop destination for health and wellness resources.</p>
+        </div>
+    
+        <div class="about-us-content">
+            <p>At Health Hub, we believe in a balanced approach to wellness—caring for your body, mind, and soul. Whether it's physical health, mental well-being, or emotional balance, we provide expert advice and tools to help you lead a healthier life.</p>
+            
+            <p>Our team consists of health professionals, writers, and community advocates committed to supporting everyone on their wellness journey. We offer valuable resources on:</p>
+    
+            <ul>
+                <li>Physical Health</li>
+                <li>Mental Health</li>
+                <li>Emotional Wellness</li>
+            </ul>
+    
+            <p>Join us in building a healthier future for all.</p>
+        </div>
+    </section>
+    
+
+    <!-- Meet Our Team Section -->
+    <section id="about">
+        <div class="about-us-hero">
+            <h2>Meet Our Team</h2>
+            <p>We are passionate professionals dedicated to improving your health and well-being.</p>
+        </div>
+    
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="https://via.placeholder.com/150" alt="Team Member Photo">
+                <h3>Thwala Lindelwa</h3>
+                <p>Founder & CEO</p>
+                <p class="bio">Babe Thwala has over 10 years of experience in wellness and mental health advocacy. Her vision is to create a holistic platform for well-being.</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/150" alt="Team Member Photo">
+                <h3>Ngomane Akhona</h3>
+                <p>Health Specialist</p>
+                <p class="bio">Mshika is a certified physical therapist who specializes in fitness programs and injury prevention. He brings practical health knowledge to the platform.</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/150" alt="Team Member Photo">
+                <h3> Juwawa Sibanyoni</h3>
+                <p>Mental Health Expert</p>
+                <p class="bio">Juwawa is a licensed therapist with expertise in cognitive behavioral therapy and mental wellness techniques. She’s passionate about creating accessible mental health resources.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Health Hub. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

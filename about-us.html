@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Health Hub and how we empower individuals to lead healthier lives through physical, mental, and emotional wellness.">
+    <meta name="keywords" content="about us, health, wellness, physical health, mental health, emotional health, health hub">
+    <meta property="og:title" content="About Us | Health Hub">
+    <meta property="og:description" content="Health Hub is dedicated to providing comprehensive resources for improving physical, mental, and emotional health.">
+    <meta property="og:image" content="https://static.toiimg.com/photo/97420059.cms">
+    <title>About Us - Health Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+    background: #007BFF;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px; /* Space between logo and heading */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+    color: #FFD700;
+}
+
+
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #0056b3;
+            color: #FFD700;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007BFF;
+            margin: 40px 0;
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        h2 {
+            text-align: center;
+            color: #007BFF;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+/* Box Styling for About Us Content */
+.about-us-content {
+    padding: 40px;
+    background-color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: left;
+    border: 2px solid #007BFF; /* Adding a border to create the box */
+}
+
+/* Box Styling for Meet Our Team */
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.team-member {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    border: 2px solid #007BFF; /* Adding a border to create the box for each member */
+}
+
+/* Adding padding inside the box for better readability */
+.about-us-content p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* Meet Our Team Section Text Box */
+.team-member h3, .team-member p {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9; /* Light background for team member text box */
+    border-radius: 5px;
+    border: 1px solid #ddd; /* Border for individual team member box */
+}
+
+.bio {
+    color: #777;
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+/* About Us Section Styling */
+#about {
+    background: #f1f8ff;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 40px;
+    position: relative;
+}
+
+.about-us-hero {
+    background: #9fabb7;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+}
+
+.about-us-hero h2 {
+    font-size: 2.5em; /* Adjusted size */
+    margin-bottom: 10px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.about-us-hero p {
+    font-size: 1.2em; /* Reduced text size */
+    margin-top: 0;
+    opacity: 0.9;
+}
+
+.about-us-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.about-us-content p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.about-us-content ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.about-us-content ul li {
+    padding: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-us-hero h2 {
+        font-size: 2em;
+    }
+
+    .about-us-content p {
+        font-size: 1em;
+    }
+}
+
+
+
+/* Team Member Grid */
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.team-member {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2); /* Hover effect with stronger shadow */
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 5px solid #8d97a1;
+    transition: transform 0.3s ease;
+}
+
+.team-member img:hover {
+    transform: scale(1.1); /* Image hover effect */
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    color: #007BFF;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    margin: 5px 0;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.bio {
+    color: #777;
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+        /* Footer */
+        footer {
+            background: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        header {
+    background: #007BFF;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    width: 130px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px; /* Space between logo and heading */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+    color: #FFD700;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Navigation Bar -->
+    <header>
+        <h1>Health Hub</h1>
+        <img src="https://dynamic.design.com/preview/logodraft/f6f0f536-b8fc-4e9f-a21e-389b558ce8dd/image/large.png" alt="Health Hub Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="about-us-hero">
+            <h2>Welcome to Health Hub</h2>
+            <p>Your one-stop destination for health and wellness resources.</p>
+        </div>
+    
+        <div class="about-us-content">
+            <p>At Health Hub, we believe in a balanced approach to wellness—caring for your body, mind, and soul. Whether it's physical health, mental well-being, or emotional balance, we provide expert advice and tools to help you lead a healthier life.</p>
+            
+            <p>Our team consists of health professionals, writers, and community advocates committed to supporting everyone on their wellness journey. We offer valuable resources on:</p>
+    
+            <ul>
+                <li>Physical Health</li>
+                <li>Mental Health</li>
+                <li>Emotional Wellness</li>
+            </ul>
+    
+            <p>Join us in building a healthier future for all.</p>
+        </div>
+    </section>
+    
+
+    <!-- Meet Our Team Section -->
+    <section id="about">
+        <div class="about-us-hero">
+            <h2>Meet Our Team</h2>
+            <p>We are passionate professionals dedicated to improving your health and well-being.</p>
+        </div>
+    
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="https://manqoba-mashego.github.io/Study-Sage/images/scholars/lindelwa.jpg" alt="Team Member Photo">
+                <h3>Thwala Lindelwa</h3>
+                <p>Founder & CEO</p>
+                <p class="bio">Babe Thwala has over 10 years of experience in wellness and mental health advocacy. Her vision is to create a holistic platform for well-being.</p>
+            </div>
+            <div class="team-member">
+                <img src="https://manqoba-mashego.github.io/Study-Sage/images/scholars/akhona.jpg" alt="Team Member Photo">
+                <h3>Ngomane Akhona</h3>
+                <p>Health Specialist</p>
+                <p class="bio">Mshika is a certified physical therapist who specializes in fitness programs and injury prevention. He brings practical health knowledge to the platform.</p>
+            </div>
+            <div class="team-member">
+                <img src="data:image/jpeg;base64,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" alt="Team Member Photo">
+                <h3> Juwawa Sibanyoni</h3>
+                <p>Mental Health Expert</p>
+                <p class="bio">Juwawa is a licensed therapist with expertise in cognitive behavioral therapy and mental wellness techniques. She’s passionate about creating accessible mental health resources.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Health Hub. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
