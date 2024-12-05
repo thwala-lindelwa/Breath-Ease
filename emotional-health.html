@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore emotional well-being strategies, tips for managing stress and anxiety, and techniques to improve mental resilience and emotional intelligence.">
+    <meta name="description" content="Explore tips and resources to nurture emotional well-being.">
+    <meta name="keywords" content="emotional health, self-care, resilience, emotional well-being">
+    <meta property="og:title" content="Emotional Health | Health Hub">
+    <meta property="og:description" content="Explore tips and resources to nurture emotional well-being.">
+    <meta property="og:image" content="https://via.placeholder.com/600x300">
     <title>Emotional Health | Health Hub</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -12,175 +16,199 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
+            background-color: #f4f4f4;
         }
 
         header {
-            background:  #007BFF;
-            padding: 20px;
+            background-color: #FF5722;
+            color: white;
+            padding: 15px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            z-index: 1000;
-            position: sticky;
-            top: 0;
         }
 
-        header a {
-            color: #fff;
+        header img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.2em;
-            margin: 0 15px;
         }
 
-        header a:hover {
+        nav ul li a:hover {
             text-decoration: underline;
         }
 
         main {
-            padding: 30px;
-            text-align: center;
+            padding: 20px;
         }
 
         h2 {
-            color: #FF6F61;
-            margin-bottom: 30px;
-        }
-
-        .section {
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            margin-bottom: 40px;
-        }
-
-        .section h3 {
-            color: #FF6F61;
-            font-size: 1.8em;
-        }
-
-        .section p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            color: #555;
+            color: #FF5722;
+            text-align: center;
             margin-bottom: 20px;
         }
 
-        .btn {
+        .carousel {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .carousel img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .carousel-buttons button {
+            background-color: #FF5722;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .carousel-buttons button:hover {
+            background-color: #E64A19;
+        }
+
+        .content-section {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .content-section img {
+            max-width: 200px;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+
+        .content-section h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .content-section p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        button {
             background-color: #007BFF;
             color: white;
-            padding: 15px 25px;
+            padding: 10px 15px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 1.1em;
-            margin-top: 20px;
+            transition: background-color 0.3s;
         }
 
-        .btn:hover {
+        button:hover {
             background-color: #0056b3;
         }
 
         footer {
-            background: #007BFF;
+            background-color: #FF5722;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 10px 0;
             position: relative;
             bottom: 0;
             width: 100%;
         }
-        header {
-    background: #007BFF;
-    color: #fff;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-header .logo {
-    width: 130px; /* Adjust size as needed */
-    height: auto;
-    margin-right: 20px; /* Space between logo and heading */
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 20px;
-    position: relative;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #0056b3;
-    color: #FFD700;
-}
-
     </style>
 </head>
 
 <body>
 
     <header>
-        <img src="https://dynamic.design.com/preview/logodraft/f6f0f536-b8fc-4e9f-a21e-389b558ce8dd/image/large.png" alt="Health Hub Logo" class="logo">
-        <a href="index.html">Home</a>
-        <a href="physical-health.html">Physical Health</a>
-        <a href="emotional-health.html">Emotional Health</a>
+        <img src="logo.png" alt="Health Hub Logo">
+        <h1>Health Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="physical-health.html">Physical Health</a></li>
+                <li><a href="mental-health.html">Mental Health</a></li>
+                <li><a href="emotional-health.html">Emotional Health</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <h2>Strengthen Your Emotional Resilience</h2>
+        <h2>Emotional Health Resources</h2>
 
-        <div class="section">
-            <h3>Managing Stress and Anxiety</h3>
-            <p>Learn techniques to manage stress, improve emotional intelligence, and increase your overall resilience.</p>
-            <iframe src="https://www.youtube.com/embed/example_video5" frameborder="0" allowfullscreen></iframe>
+        <div class="carousel">
+            <img id="carousel-image" src="self-care.jpg" alt="Self-Care Image">
+            <div class="carousel-buttons">
+                <button onclick="previousImage()">Previous</button>
+                <button onclick="nextImage()">Next</button>
+            </div>
         </div>
 
-        <div class="section">
-            <h3>Emotional Intelligence</h3>
-            <p>Develop emotional awareness and better interpersonal relationships by understanding your emotions and others' reactions.</p>
-            <iframe src="https://www.youtube.com/embed/example_video6" frameborder="0" allowfullscreen></iframe>
+        <div class="content-section">
+            <img src="self-care.jpg" alt="Self-Care">
+            <div>
+                <h3>Practicing Self-Care</h3>
+                <p>Taking care of your emotional health starts with self-care. Discover routines and habits to improve your emotional resilience.</p>
+                <button onclick="window.location.href='self-care.html'">Learn More</button>
+            </div>
         </div>
 
-        <div class="section">
-            <h3>Quick Tips for Emotional Health</h3>
-            <ul>
-                <li>Practice mindfulness meditation to stay grounded.</li>
-                <li>Talk to someone about how you feel.</li>
-                <li>Set healthy boundaries to manage stress.</li>
-                <li>Take time for self-care every day.</li>
-            </ul>
+        <div class="content-section">
+            <img src="resilience.jpg" alt="Resilience">
+            <div>
+                <h3>Building Resilience</h3>
+                <p>Resilience helps you navigate life’s challenges. Learn techniques to strengthen your ability to bounce back from setbacks.</p>
+                <button onclick="window.location.href='resilience.html'">Explore More</button>
+            </div>
         </div>
-
-        <!-- Back to Home button -->
-        <button class="btn" onclick="window.location.href='index.html';">Back to Home</button>
     </main>
 
     <footer>
         <p>&copy; 2024 Health Hub. All rights reserved.</p>
     </footer>
+
+    <script>
+        const images = ['self-care.jpg', 'resilience.jpg', 'mindfulness.jpg'];
+        let currentIndex = 0;
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            document.getElementById('carousel-image').src = images[currentIndex];
+        }
+
+        function previousImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            document.getElementById('carousel-image').src = images[currentIndex];
+        }
+    </script>
 
 </body>
 
