@@ -4,150 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore tips and resources to improve physical health.">
-    <meta name="keywords" content="physical health, exercise, nutrition, wellness">
-    <meta property="og:title" content="Physical Health | Health Hub">
-    <meta property="og:description" content="Explore tips and resources to improve physical health.">
-    <meta property="og:image" content="https://via.placeholder.com/600x300">
+    <meta name="description" content="Discover tips for maintaining physical health and fitness.">
+    <meta name="keywords" content="physical health, fitness, exercise, healthy living">
     <title>Physical Health | Health Hub</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-        }
-
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header img {
-            height: 40px;
-            margin-right: 10px;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        nav ul li {
-            margin-left: 20px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        h2 {
-            color: #4CAF50;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .carousel {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .carousel img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        .carousel-buttons button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            margin: 10px 5px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .carousel-buttons button:hover {
-            background-color: #45a049;
-        }
-
-        .content-section {
-            display: flex;
-            align-items: center;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-
-        .content-section img {
-            max-width: 200px;
-            margin-right: 20px;
-            border-radius: 8px;
-        }
-
-        .content-section h3 {
-            margin-top: 0;
-            color: #333;
-        }
-
-        .content-section p {
-            line-height: 1.6;
-            color: #555;
-        }
-
-        button {
-            background-color: #007BFF;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        footer {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
     <header>
         <img src="logo.png" alt="Health Hub Logo">
         <h1>Health Hub</h1>
@@ -163,30 +27,20 @@
 
     <main>
         <h2>Physical Health Resources</h2>
-
         <div class="carousel">
             <img id="carousel-image" src="exercise.jpg" alt="Exercise Image">
             <div class="carousel-buttons">
-                <button onclick="previousImage()">Previous</button>
-                <button onclick="nextImage()">Next</button>
-            </div>
-        </div>
-
-        <div class="content-section">
-            <img src="nutrition.jpg" alt="Nutrition">
-            <div>
-                <h3>Healthy Eating</h3>
-                <p>Nutrition plays a vital role in physical health. Learn about balanced diets and meal planning to keep your body energized.</p>
-                <button onclick="window.location.href='nutrition.html'">Learn More</button>
+                <button onclick="goToPage('mental-health.html')">Previous</button>
+                <button onclick="goToPage('emotional-health.html')">Next</button>
             </div>
         </div>
 
         <div class="content-section">
             <img src="exercise.jpg" alt="Exercise">
             <div>
-                <h3>Exercise and Fitness</h3>
-                <p>Regular physical activity is crucial. Discover fitness routines and tips for staying active every day.</p>
-                <button onclick="window.location.href='exercise.html'">Explore More</button>
+                <h3>Exercise for Better Health</h3>
+                <p>Regular exercise is vital for maintaining physical health. Learn about easy ways to stay active.</p>
+                <button onclick="window.location.href='exercise.html'">Explore Workouts</button>
             </div>
         </div>
     </main>
@@ -196,20 +50,10 @@
     </footer>
 
     <script>
-        const images = ['exercise.jpg', 'nutrition.jpg', 'wellness.jpg'];
-        let currentIndex = 0;
-
-        function nextImage() {
-            currentIndex = (currentIndex + 1) % images.length;
-            document.getElementById('carousel-image').src = images[currentIndex];
-        }
-
-        function previousImage() {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            document.getElementById('carousel-image').src = images[currentIndex];
+        function goToPage(page) {
+            window.location.href = page;
         }
     </script>
-
 </body>
 
 </html>
