@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about mental health strategies, tips for mental well-being, and resources for improving your cognitive health and emotional resilience.">
+    <meta name="description" content="Explore resources and tips for better mental health.">
+    <meta name="keywords" content="mental health, stress management, mindfulness, mental wellness">
+    <meta property="og:title" content="Mental Health | Health Hub">
+    <meta property="og:description" content="Explore resources and tips for better mental health.">
+    <meta property="og:image" content="https://via.placeholder.com/600x300">
     <title>Mental Health | Health Hub</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -12,173 +16,193 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
+            background-color: #f4f4f4;
         }
 
         header {
-            background: #007BFF;
-            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+            padding: 15px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            z-index: 1000;
-            position: sticky;
-            top: 0;
         }
 
-        header a {
-            color: #fff;
+        header img {
+            max-height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.2em;
-            margin: 0 15px;
         }
 
-        header a:hover {
+        nav ul li a:hover {
             text-decoration: underline;
         }
 
         main {
             padding: 30px;
-            text-align: center;
         }
 
         h2 {
-            color: #FF6F61;
+            color: #007BFF;
+            text-align: center;
             margin-bottom: 30px;
         }
 
-        .section {
-            background-color: #fff;
-            padding: 30px;
+        .content-section {
+            background-color: white;
+            padding: 25px;
             border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            margin-bottom: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
         }
 
-        .section h3 {
-            color: #FF6F61;
-            font-size: 1.8em;
+        .content-section img {
+            width: 40%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .section p {
-            font-size: 1.2em;
+        .content-section h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .content-section p {
             line-height: 1.6;
             color: #555;
-            margin-bottom: 20px;
         }
 
-        .btn {
-            background-color: #007BFF;
+        .content-section button {
+            background-color: #28a745;
             color: white;
-            padding: 15px 25px;
+            padding: 10px 15px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 1.1em;
-            margin-top: 20px;
+            transition: background-color 0.3s;
         }
-        header {
-    background: #007BFF;
-    color: #fff;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
 
-header .logo {
-    width: 130px; /* Adjust size as needed */
-    height: auto;
-    margin-right: 20px; /* Space between logo and heading */
-}
+        .content-section button:hover {
+            background-color: #218838;
+        }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
+        .carousel {
+            margin: 20px auto;
+            max-width: 90%;
+            position: relative;
+        }
 
-nav ul li {
-    margin: 0 20px;
-    position: relative;
-}
+        .carousel img {
+            width: 100%;
+            border-radius: 10px;
+        }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
+        .carousel-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
 
-nav ul li a:hover {
-    background-color: #0056b3;
-    color: #FFD700;
-}
-
-
-        .btn:hover {
-            background-color: #0056b3;
+        .carousel-buttons button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
         }
 
         footer {
-            background: #007BFF;
+            background-color: #007BFF;
             color: white;
             text-align: center;
-            padding: 20px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            padding: 15px 0;
+            margin-top: 30px;
         }
-
     </style>
 </head>
 
 <body>
 
     <header>
-        <img src="https://dynamic.design.com/preview/logodraft/f6f0f536-b8fc-4e9f-a21e-389b558ce8dd/image/large.png" alt="Health Hub Logo" class="logo">
-        <a href="index.html">Home</a>
-        <a href="physical-health.html">Physical Health</a>
-        <a href="emotional-health.html">Emotional Health</a>
-        <a href="mental-health.html">Mental Health</a>
+        <img src="logo.png" alt="Health Hub Logo">
+        <h1>Health Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="physical-health.html">Physical Health</a></li>
+                <li><a href="mental-health.html">Mental Health</a></li>
+                <li><a href="emotional-health.html">Emotional Health</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <h2>Enhance Your Mental Well-being</h2>
+        <h2>Mental Health Resources</h2>
 
-        <div class="section">
-            <h3>Mindfulness and Meditation</h3>
-            <p>Discover the benefits of mindfulness practices and meditation for mental clarity and emotional balance.</p>
-            <iframe src="https://www.youtube.com/embed/example_video9" frameborder="0" allowfullscreen></iframe>
+        <div class="carousel">
+            <img id="carousel-image" src="image1.jpg" alt="Carousel Image 1">
+            <div class="carousel-buttons">
+                <button onclick="previousImage()">Previous</button>
+                <button onclick="nextImage()">Next</button>
+            </div>
         </div>
 
-        <div class="section">
-            <h3>Managing Stress and Anxiety</h3>
-            <p>Learn techniques to manage stress and reduce anxiety with practical approaches to improve mental health.</p>
-            <iframe src="https://www.youtube.com/embed/example_video10" frameborder="0" allowfullscreen></iframe>
+        <div class="content-section">
+            <img src="stress-management.jpg" alt="Stress Management">
+            <div>
+                <h3>Managing Stress</h3>
+                <p>Stress can negatively impact your mental health. Explore techniques such as relaxation exercises and healthy coping strategies.</p>
+                <button onclick="window.location.href='stress-management.html'">Learn More</button>
+            </div>
         </div>
 
-        <div class="section">
-            <h3>Building Mental Resilience</h3>
-            <p>Strengthen your ability to cope with life's challenges by building mental resilience through positive thinking and stress management techniques.</p>
+        <div class="content-section">
+            <img src="mindfulness.jpg" alt="Mindfulness">
+            <div>
+                <h3>Mindfulness and Meditation</h3>
+                <p>Practicing mindfulness can help you stay present and manage anxiety. Discover meditation techniques to improve mental clarity.</p>
+                <button onclick="window.location.href='mindfulness.html'">Discover More</button>
+            </div>
         </div>
-
-        <!-- Back to Home button -->
-        <button class="btn" onclick="window.location.href='index.html';">Back to Home</button>
     </main>
 
     <footer>
         <p>&copy; 2024 Health Hub. All rights reserved.</p>
     </footer>
 
+    <script>
+        const images = ['image1.jpg', 'image2.jpg', 'image3.jpg'];
+        let currentIndex = 0;
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            document.getElementById('carousel-image').src = images[currentIndex];
+        }
+
+        function previousImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            document.getElementById('carousel-image').src = images[currentIndex];
+        }
+    </script>
 </body>
 
 </html>
