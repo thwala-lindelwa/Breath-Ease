@@ -167,8 +167,8 @@
         <div class="carousel">
             <img id="carousel-image" src="self-care.jpg" alt="Self-Care Image">
             <div class="carousel-buttons">
-                <button onclick="previousImage()">Previous</button>
-                <button onclick="nextImage()">Next</button>
+                <button onclick="goToPage('physical-health.html')">Previous</button>
+                <button onclick="goToPage('mental-health.html')">Next</button>
             </div>
         </div>
 
@@ -196,17 +196,8 @@
     </footer>
 
     <script>
-        const images = ['self-care.jpg', 'resilience.jpg', 'mindfulness.jpg'];
-        let currentIndex = 0;
-
-        function nextImage() {
-            currentIndex = (currentIndex + 1) % images.length;
-            document.getElementById('carousel-image').src = images[currentIndex];
-        }
-
-        function previousImage() {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            document.getElementById('carousel-image').src = images[currentIndex];
+        function goToPage(page) {
+            window.location.href = page;
         }
     </script>
 
